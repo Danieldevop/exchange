@@ -1,0 +1,85 @@
+:root {
+	--text-color: #202020;
+	--bg-color: #F5F5F5;
+	--bg-padding: 3% 7% 3% 7%;
+	--bg-violet: #f0e8fc;
+}
+
+nav {
+	padding: 10px 30px 10px 30px;
+}
+
+h1 {
+	color: var(--text-color);
+}
+
+h2 {
+	color: var(--text-color);
+}
+
+p {
+	color: var(--text-color);
+}
+
+.bg4 h1 {
+	color: #48007E;
+	text-align: center;
+}
+
+.bg4-content {
+	text-align: center;
+}
+
+.main-title {
+	margin-top: 18%;
+	font-size: 50px;
+	padding: 20px;
+}
+
+.face-pay {
+	display: grid;
+}
+
+.face-pay div img {
+	width: 98%;
+}
+
+.bg1 {
+	margin-top: -55px;
+	padding: var(--bg-padding);
+	background-color: var(--bg-color);
+}
+
+.bg2 {
+	padding: var(--bg-padding);
+}
+
+.bg3 {
+	padding: var(--bg-padding);
+	background-color: var(--bg-color);
+}
+
+.bg4 {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding: var(--bg-padding);
+	background-color: var(--bg-violet);
+}
+
+.bg1 div img {
+	width: 100%;
+}
+
+.bg1 h2 {
+	margin-top: 20%;
+	font-size: 40px;
+}
+
+.bg2 div img {
+	width: 70%;
+}
+
+.bg2 h1 {
+	margin-top: 20%;
+	font-size: 40px;
+}
