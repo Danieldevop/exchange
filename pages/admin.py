@@ -5,5 +5,5 @@ from .models import ContactForm
 
 
 @admin.register(ContactForm)
-def ContactForm(admin.ModelAdmin):
-	fields = ('id', 'name', 'phone')
+class ContactForm(admin.ModelAdmin):
+	fields = ('name', 'phone')
