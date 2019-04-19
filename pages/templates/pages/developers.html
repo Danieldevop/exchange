@@ -1,0 +1,36 @@
+{% extends 'pages/base.html' %}
+{%  load static %}
+
+{% block title %}
+<title>Desarrolladores</title>
+{% endblock %}
+
+
+{% block content %}
+<section class="container">
+	<div class="bg2 columns developers">
+					<div class="column">
+						<img src="{% static 'img/developers.png' %}" alt="product">
+					</div>
+					<div class="column">
+						<h1 class="title">
+							Integra nuestro servicio a tus productos.
+						</h1>
+						<p>
+							Con Pocas líneas de código puedes implementar autenticación de pagos. Puedes usar nuestra API o nuestro el SDK para NodeJS.
+						</p>
+						<img  class="code-example" src="{% static 'img/code-example.png' %}">
+					</div>
+
+				</div>
+
+				<div class="bg-contact">
+					<h1 class="title">
+						¿Quieres saber más?
+					</h1>
+					<div class="bg4-content">
+						<a href="{% url 'contact' %}" class="button is-black">CONTÁCTANOS</a>
+					</div>
+				</div>
+</section>
+{% endblock %}
