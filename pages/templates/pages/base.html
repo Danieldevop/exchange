@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'styles/bulma.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="icon" type="image/png" href="{% static 'icons/favicon-32x32.png' %}" sizes="32x32" />
+	<link rel="icon" type="image/png" href="{% static 'icons/favicon-16x16.png' %}" sizes="16x16" />
 	{% block extras %}
 
 	{% endblock %}
@@ -20,7 +22,7 @@
 				<nav class="navbar is-fixed-top" role="navigation" arial-label="main navigation">
 					<div class="navbar-brand">
 						<a class="navbar-item" href="{% url 'home-page' %}">
-							<img src="{% static 'img/logo.png' %}" alt="face-recog">
+							<img src="{% static 'img/Careto.png' %}" alt="face-recog">
 						</a>
 						<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       						<span aria-hidden="true"></span>
@@ -42,7 +44,7 @@
 		{% endblock %}
 		<footer class="footer">
 			<div class="content has-text-centered">
-				<strong>2019</strong> - Tu rostro es tu tarjeta
+				<strong>Careto 2019</strong> - Tu rostro es tu tarjeta
 			</div>
 		</footer>
 	</main>

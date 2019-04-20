@@ -1,3 +1,4 @@
+# Django
 from django.shortcuts import render
 from django.urls import reverse
 from django.http import HttpResponseRedirect
@@ -35,10 +36,10 @@ class DevView(TemplateView):
 	template_name = "pages/developers.html"
 
 class SuccessView(TemplateView):
-	template_name = "pages/developers.html"
+	template_name = "pages/success.html"
 
 	def get(self, request):
-		if request.META['HTTP_REFERER'][22:] == 'contacto':
-			return render(request, 'pages/success.html')
+		if request.META['HTTP_REFERER'][22:] != 'contacto':
+			return render(request, 'pages/contact.html')
 		else:
 			return render(request, self.template_name)

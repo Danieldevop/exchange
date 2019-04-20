@@ -6,4 +6,6 @@ from .models import ContactForm
 
 @admin.register(ContactForm)
 class ContactForm(admin.ModelAdmin):
-	fields = ('name', 'phone')
+	list_display = ('id', 'name', 'phone')
+	fields = ('name', 'surname', 'phone', 'email', 'message')
+
