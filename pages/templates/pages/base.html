@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}
+
+	{% endblock %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bulma.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="icon" type="image/png" href="{% static 'icons/favicon-32x32.png' %}" sizes="32x32" />
+	<link rel="icon" type="image/png" href="{% static 'icons/favicon-16x16.png' %}" sizes="16x16" />
+	{% block extras %}
+
+	{% endblock %}
+</head>
+<body>
+	<main>
+		<header class="">
+				<nav class="navbar is-fixed-top" role="navigation" arial-label="main navigation">
+					<div class="navbar-brand">
+						<a class="navbar-item" href="{% url 'home-page' %}">
+							<img src="{% static 'img/Careto.png' %}" alt="face-recog">
+						</a>
+						<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      						<span aria-hidden="true"></span>
+      						<span aria-hidden="true"></span>
+      						<span aria-hidden="true"></span>
+    					</a>
+					</div>
+					<div id="navbarBasicExample" class="navbar-menu">
+						<div class="navbar-end">
+							<a class="navbar-item" href="{% url 'home-page' %}">Producto</a>
+							<a class="navbar-item" href="{% url 'developers' %}">Desarrolladores</a>
+							<a class="navbar-item button is-black top-nav-btn" href="{% url 'contact' %}">CONTÁCTO</a>
+						</div>
+					</div>
+				</nav>
+		</header>
+		{% block content %}
+
+		{% endblock %}
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<strong>Careto 2019</strong> - Tu rostro es tu tarjeta
+			</div>
+		</footer>
+	</main>
+	<script src="{% static 'js/index.js' %}"></script>
+	{% block script %}
+
+	{% endblock %}
+</body>
+</html>

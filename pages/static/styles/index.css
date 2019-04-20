@@ -1,0 +1,269 @@
+:root {
+	--text-color: #202020;
+	--bg-color: #F5F5F5;
+	--bg-padding: 3% 7% 3% 7%;
+	--bg-violet: #f0e8fc;
+}
+
+/* IntelInput css*/
+.iti-flag {background-image: url("../intl-tel-input-15.0.0/build/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti-flag {background-image: url("../intl-tel-input-15.0.0/build/img/flags@2x.png");}
+}
+
+nav {
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
+	padding: 10px 20px 10px 20px;
+}
+
+nav a {
+	margin: 4px;
+}
+
+h1 {
+	color: var(--text-color);
+}
+
+h2 {
+	color: var(--text-color);
+}
+
+p {
+	color: var(--text-color);
+	font-size: 18px;
+}
+
+.bg4 h1 {
+	color: #3C1BE4;
+	text-align: center;
+}
+
+.bg4-content {
+	text-align: center;
+}
+
+.main-title {
+	margin-top: 18%;
+	font-size: 50px;
+	padding: 20px;
+}
+
+.face-pay {
+	margin-top: 4%;
+}
+
+.face-pay div img {
+	width: 98%;
+}
+
+.bg1 {
+	margin-top: -55px;
+	padding: var(--bg-padding);
+	background-color: var(--bg-color);
+}
+
+.bg2 {
+	padding: var(--bg-padding);
+}
+
+.bg3 {
+	padding: var(--bg-padding);
+	background-color: var(--bg-color);
+}
+
+.bg3 div a {
+	margin-top: 4%;
+}
+
+.bg4 {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding: var(--bg-padding);
+	background-color: var(--bg-violet);
+}
+
+.bg1 div img {
+	width: 100%;
+}
+
+.bg1 h2 {
+	margin-top: 20%;
+	font-size: 40px;
+}
+
+.bg2 div img {
+	width: 70%;
+}
+
+.bg2 h1 {
+	margin-top: 20%;
+	font-size: 40px;
+}
+
+.bg3 div img {
+	width: 60%;
+}
+
+.bg3 h1 {
+	color: #3C1BE4;
+	margin-top: 30%;
+	font-size: 40px;
+}
+
+.top-nav-btn {
+	margin-top: 7px;
+}
+
+.developers {
+	margin-top: 5%;
+}
+
+.bg-contact {
+	text-align: center;
+	padding: 5%;
+	margin-bottom: 3%;
+	background-color: var(--bg-color);
+}
+
+.code-example {
+	width: 100% !important;
+}
+
+.contact-index div p {
+	padding: 10px 200px 10px 200px;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+	margin-top: 10%;
+}
+
+.contact-form {
+	padding: 1%;
+	width: 75%;
+	margin: auto;
+}
+
+.contact-button {
+	width: 100%;
+}
+
+.gracias {
+	margin-top: 1%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+	.contact-index div p {
+    	padding: 10px 100px 10px 100px;
+	}
+
+	.columns {
+    	margin-left: -.0rem;
+    	margin-right: -.0rem;
+	}
+
+	nav {
+		
+		padding: 10px 0px 10px 0px;
+	}
+
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 768px) {
+	.main-title {
+    	margin-top: 0%;
+    	margin-bottom: 7%;
+    	font-size: 50px;
+    	text-align: center;
+	}
+
+	.bg1 h2 {
+    	margin-top: 7%;
+    	font-size: 40px;
+	}
+
+	.bg2 div img {
+    	width: 70%;
+    	margin: 0 auto;
+    	display: block;
+	}
+
+	.bg2 h1 {
+    	margin-top: 0%;
+    	text-align: center;
+	}
+
+	.bg3 h1 {
+    	margin-top: 6%;
+	}
+
+	.bg3 div img {
+    	width: 47%;
+    	display: block;
+    	margin: auto;
+	}
+}	
+
+@media (max-width: 575px) {
+
+	.face-pay div img {
+    	width: 100%;
+	}
+
+	.main-title {
+	    margin-top: -15%;
+	    margin-bottom: 2%;
+	    font-size: 36px;
+	}
+
+	.bg1 h2 {
+    	margin-top: 7%;
+    	font-size: 30px;
+    	text-align: left;
+	}
+
+	.bg2 div img {
+    	width: 80%;
+	}
+
+	.bg2 h1 {
+		font-size: 36px;
+	}
+
+	.bg3 h1 {
+		font-size: 36px;
+	}
+
+	.bg3 div img {
+    	width: 97%;
+	}
+
+	.contact-index div p {
+    	padding: 10px 0px 10px 0px;
+	}
+
+	.developer-sect-margin  {
+		margin-top: 24%;
+	}
+
+	.dev-c-title {
+		font-size: 24px;
+	}
+
+	.contact {
+		margin-top: 24%;
+	}
+
+	.contact-form {
+    	width: 100%;
+	}
+}
