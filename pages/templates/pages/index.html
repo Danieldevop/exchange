@@ -1,0 +1,75 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Careto | Tu rostro es tu tarjeta</title>
+{% endblock %}
+
+	
+{% block content %}
+		<section class="container">
+			<section class="section">
+				<div class="face-pay columns animated fadeIn">
+					<div class="column">
+						<img src="{% static 'img/pay-with-your-face.png' %}" alt="face pay">
+					</div>
+					<div class="column">
+						<h1 class="title main-title">Usa tu cara, no tu billetera</h1>
+					</div>
+				</div>
+			</section>
+			<section id="product">
+				<div class="bg1 columns">
+					<div class="column">
+						<h2 class="title">Nuevas experiecias de pago en tu comercio.</h2>
+						<p>
+							Permite a tus clientes pagar usando reconocimiento facial en tu página web o comercio físico.
+						</p>
+					</div>
+					<div class="column">
+						<img src="{% static 'img/new-payment-experience.png' %}" alt="product">
+						
+					</div>
+				</div>
+				<div class="bg2 columns">
+					<div class="column">
+						<img src="{% static 'img/face-card.png' %}" alt="product">
+					</div>
+					<div class="column">
+						<h1 class="title">
+							Tu rostro es tu tarjeta.
+						</h1>
+						<p>
+							Instala nuestro plugin, asocia tu tarjeta y paga en internet sin importar la pagina web en la que te encuentres 
+						</p>
+					</div>
+				</div>
+				<div class="bg3 columns">
+					<div class="column">
+						<h1 class="title">
+							Nuevas posibilidades
+						</h1>
+						<p>
+							Implementa nuevas formas de verificación para tus usuarios en pagos, créditos o lo que se te ocurra.
+						</p>
+						<a href="{% url 'developers' %}" class="button is-black">DESARROLLADORES</a>
+					</div>
+					<div class="column">
+						<img src="{% static 'img/new-payments.png' %}" alt="product">
+						
+					</div>
+				</div>
+				<div class="bg4 contact-index">
+					<h1 class="title">
+						Quiero saber más!
+					</h1>
+					<div class="bg4-content">
+						<p class="subtitle ">
+							Si eres un e-commerce, un comercio o un usuario que usa pagos digitales, ¡queremos hablar contigo!
+						</p>
+						<a href="{% url 'contact' %}" class="button is-black">CONTÁCTANOS</a>
+					</div>
+				</div>
+			</section>
+		</section>
+{% endblock %}

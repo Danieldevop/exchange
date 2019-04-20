@@ -1,0 +1,84 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Contácto</title>
+{% endblock %}
+
+{% block extras %}
+<link rel="stylesheet" type="text/css" href="{% static 'intl-tel-input-15.0.0/build/css/intlTelInput.min.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="container">
+	<div class="bg-contact contact">
+		<h1 class="title">
+			Permítenos conocerte mejor
+		</h1>
+		<p>Solo llena el formulario. te contactaremos lo mas pronto posible</p>
+		<div class="bg4-content contact-form">
+			<form id="theForm" method="POST" class="contact-form">
+				{% csrf_token %}
+				<div class="field">
+					<label class="label" for="name"></label>
+					<div class="control">
+						<input class="input" id="name" required="true" type="text" placeholder="Nombre" name="name">
+					</div>
+				</div>
+
+				<div class="field">
+					<label class="label" for="surname"></label>
+					<div class="control">
+						<input class="input" id="surname" required="true" type="text" placeholder="Apellido" name="surname">
+					</div>
+				</div>
+
+				<div class="field">
+					<label class="label" for="email"></label>
+					<div class="control">
+						<input class="input" id="email" required="true" type="email" placeholder="Email" name="email">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label" for="phone"></label>
+					<div class="control">
+						<input class="input" type="tel" id="phone" required="true" placeholder="Número de movil" name="phone">
+					</div>
+				</div>
+				<div class="field">
+					<textarea class="textarea" placeholder="Mensaje Opcional" name="message"></textarea>
+				</div>
+				 <div class="">
+    				<input type="submit" class="contact-button button is-black" value="ENVIAR">
+  				</div>
+			</form>
+			
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'intl-tel-input-15.0.0/build/js/intlTelInput.min.js' %}"></script>
+<!-- <script src="{% static 'intl-tel-input-15.0.0/build/js/utils.js' %}"></script> -->
+<script>
+	var input = document.querySelector("#phone"),
+		form = document.querySelector("form")
+  	var iti = intlTelInput(input, {
+  		utilsScript: "../../static/intl-tel-input-15.0.0/build/js/utils.js",
+  		preferredCountries: ["pe", "co"]
+  	});
+
+  	window.onload = function() {
+
+  		document.getElementById('theForm').onsubmit = function() {
+    		var num = iti.getNumber(),
+      			valid = iti.isValidNumber();
+    		input.value = num;
+  		};
+  	};
+  	
+</script>
+{% endblock %}
