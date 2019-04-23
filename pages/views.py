@@ -32,8 +32,5 @@ class ContactView(TemplateView):
 
 		return HttpResponseRedirect(reverse('success'))
 
-class DevView(TemplateView):
-	template_name = "pages/developers.html"
-
 class SuccessView(TemplateView):
 	template_name = "pages/success.html"

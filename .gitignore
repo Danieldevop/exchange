@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 venv
 *.pyc
 staticfiles
 .env
-=======
->>>>>>> d744ba74120cdc64358e1addaeafea9818279bbb
 db.sqlite3
+Pipfile.lock

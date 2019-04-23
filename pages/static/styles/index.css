@@ -22,6 +22,21 @@ nav a {
 	margin: 4px;
 }
 
+.btn-main {
+	background: #00DA1C;
+	color: white;
+	font-weight: bold;
+}
+
+.btn-main:hover {
+	color: black !important;
+	background-color: transparent;
+}
+
+a:hover {
+	color: black !important;
+}
+
 h1 {
 	color: var(--text-color);
 }
