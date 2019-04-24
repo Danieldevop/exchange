@@ -23,7 +23,7 @@ nav a {
 }
 
 .btn-main {
-	background: #FF4340;
+	background: #00B698;
 	color: white;
 	font-weight: bold;
 }
@@ -156,10 +156,35 @@ p {
 	margin-top: 10%;
 }
 
+label {
+	text-align: left;
+}
+
+input {
+	width: 100%;
+	height: 50px;
+	border-radius: 12px;
+	padding: 10px;
+	border: 2px solid  black;
+	font-size: 30px;
+}
+
+.money {
+	text-align: left;
+	font-weight: bold;
+	margin-top: 2%;
+	background: black;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.money p {
+	color: white;
+}
+
 .contact-form {
-	width: 95%;
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 15%;
 }
 
 .contact-button {

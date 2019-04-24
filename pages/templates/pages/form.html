@@ -1,0 +1,32 @@
+
+<div class="bg4-content contact-form">
+	<form id="theForm" method="POST" class="contact-form">
+		{% csrf_token %}
+		<label class="label" for="envias">Envías</label>
+		<div class="columns">
+			<div class="column is-two-thirds">
+				<div class="control ">
+					<input class="" id="envias" required="true" onkeyup="soles_to_usd();" type="text" value="" name="envias">
+				</div>
+			</div>
+			
+			<div class="money column">
+				<p>SOLES</p>
+			</div>
+		</div>
+
+		<label class="label" for="recibes">Recibes</label>
+		<div class="columns">
+			<div class="column is-two-thirds">
+				<input class="" id="recibes" required="true" onkeyup="usd_to_soles();" type="text" value="" name="recibes">
+			</div>
+			<div class="money column">
+				<p>DOLARES</p>
+			</div>
+		</div>
+
+		<div class="">
+			<input type="submit" class="contact-button button btn-main" value="CAMBIAR">
+		</div>
+	</form>							
+</div>
