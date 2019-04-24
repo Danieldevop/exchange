@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-<title>Careto | Tu rostro es tu tarjeta</title>
+<title>Cambioo | cambioo tu plata online!</title>
 {% endblock %}
 
 	
@@ -11,26 +11,60 @@
 			<section class="section">
 				<div class="face-pay columns animated fadeIn">
 					<div class="column">
-						<img src="{% static 'img/cambio.png' %}" alt="face pay">
+						<img src="{% static 'img/hand.png' %}" alt="face pay">
 					</div>
 					<div class="column">
-						<h1 class="title main-title">Relax.. tu dinero está en camino</h1>
+						<h1 class="title main-title">Cambia tus soles y dólares en perú</h1>
+						<div class="bg4-content contact-form">
+			<form id="theForm" method="POST" class="contact-form">
+				{% csrf_token %}
+				<div class="field">
+					<label class="label" for="envias">Envías</label>
+					<div class="control">
+						<input class="input" id="envias" required="true" onkeyup="soles_to_usd();" type="text" value="" name="envias">
+					</div>
+				</div>
+
+				<div class="field">
+					<label class="label" for="recibes">Recibes</label>
+					<div class="control">
+						<input class="input" id="recibes" required="true" onkeyup="usd_to_soles();" type="text" value="" name="recibes">
+					</div>
+				</div>
+
+				<div class="">
+    				<input type="submit" class="contact-button button btn-main" value="CAMBIAR">
+  				</div>
+			</form>
+			
+		</div>
 					</div>
 				</div>
 			</section>
 			<section id="product">
 				<div class="bg1 columns">
 					<div class="column">
-						<h2 class="title">Nuevas experiecias de pago en tu comercio.</h2>
+						<h2 class="title">Cambia tus soles por dolares.</h2>
 						<p>
-							Permite a tus clientes pagar usando reconocimiento facial en tu página web o comercio físico.
+							Cambia tus soles por dolares desde la comodidad de tu oficina.
 						</p>
 					</div>
 					<div class="column">
-						<img src="{% static 'img/new-payment-experience.png' %}" alt="product">
-						
+						<img src="{% static 'img/cambio.png' %}" alt="face pay">
 					</div>
 				</div>
 			</section>
 		</section>
+
+		<script>
+			function soles_to_usd() {
+				let soles = document.getElementById("envias").value
+				document.getElementById("recibes").value = soles * 3
+			}
+
+			function usd_to_soles() {
+				let usd = document.getElementById("recibes").value
+				document.getElementById("envias").value = usd / 3
+			}
+		</script>
 {% endblock %}
