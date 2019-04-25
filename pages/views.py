@@ -11,14 +11,17 @@ import pdb
 class HomeView(TemplateView):
 	template_name = "pages/index.html"
 
-class ContactView(TemplateView):
-	template_name = "pages/contact.html"
+	def post(self, request):
+		return HttpResponseRedirect(reverse('exchange-form'))
+
+class ExchangeFormView(TemplateView):
+	template_name = "pages/exchangeForm.html"
 
 	def post(self, request):
 		with connection.cursor() as cursor:
 			cursor.execute(
 				'''
-				INSERT INTO pages_contactform (name, surname, email, phone, message)
+				INSERT INTO pages_exchangeform (name, surname, email, phone, message)
 				VALUES (%s, %s, %s, %s, %s)
 				''',	
 				[

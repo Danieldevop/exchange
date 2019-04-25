@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class ContactForm(models.Model):
 	name = models.CharField(max_length=20)
@@ -11,3 +10,12 @@ class ContactForm(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class ExchangeForm(models.Model):
+	amount_to_exchange = models.IntegerField()
+	name = models.CharField(max_length=20)
+	surname = models.CharField(max_length=20)
+	email = models.EmailField()
+	phone = models.CharField(max_length=15)
+	calculated_value = models.IntegerField()
+

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ContactForm
+from .models import ContactForm, ExchangeForm
 
 # Register your models here.
 
@@ -8,4 +8,10 @@ from .models import ContactForm
 class ContactForm(admin.ModelAdmin):
 	list_display = ('id', 'name', 'phone')
 	fields = ('name', 'surname', 'phone', 'email', 'message')
+
+
+@admin.register(ExchangeForm)
+class ContactForm(admin.ModelAdmin):
+	list_display = ('id', 'name', 'phone')
+
 
