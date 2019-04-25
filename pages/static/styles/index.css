@@ -60,10 +60,11 @@ p {
 }
 
 .main-title {
-	font-size: 30px;
-	padding: 10px;
+	font-size: 35px;
+	padding: 0 40px 0 40px;
+	line-height: 43px;
 	text-align: left;
-	margin-top: -6%;
+	margin-top: -5%;
 }
 
 .face-pay {
@@ -182,22 +183,28 @@ input {
 	border-radius: 5px;
 }
 
-.spin-btn {
+.spiner {
 	border: none;
 	background: transparent;
 	outline: none;
 	cursor: pointer;
-	width: 20%;
+	width: 16%;
+    margin-left: 76%;
+}
+
+.spin-btn {
+	
 	animation: spin 1s linear;
 }
 
 .spin-reverse {
-	border: none;
-	background: transparent;
-	outline: none;
-	cursor: pointer;
-	width: 20%;
 	animation: spin-rev 1s linear;
+}
+
+
+@keyframes spin {
+	 0% { transform: rotate(0deg); }
+	 100% { transform: rotate(360deg); }
 }
 
 
@@ -212,7 +219,13 @@ input {
 
 .contact-form {
 	margin: auto;
-	margin-top: 20%;
+	margin-top: 15%;
+}
+
+.contact-form-contact {
+	margin: auto;
+	margin-top: 5%;
+	width: 60%;
 }
 
 .contact-button {

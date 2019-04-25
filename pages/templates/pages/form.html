@@ -2,17 +2,19 @@
 {% load static %}
 
 <div class="bg4-content contact-form animated bounceInUp">
-	<div>
-		<button id="spin" class="spin-btn" onclick="changeCoin()" >
-			<img src="https://storage.cloud.google.com/exchange-usd-peru/spin.svg?authuser=1&_ga=2.144641271.-354877498.1555388895" alt="spin">
-		</button>
-	</div>
+	
 	<form id="theForm" method="POST" class="contact-form">
 		{% csrf_token %}
 		<label class="label" for="envias">Envías</label>
 		<div id="money1" class="columns">
 			
 		</div>
+
+		
+		<div id="spin" class="spiner label" onclick="changeCoin()" >
+			<img src="https://storage.cloud.google.com/exchange-usd-peru/spin.svg?authuser=1&_ga=2.144641271.-354877498.1555388895" alt="spin">
+		</div>
+
 		<label class="label" for="recibes">Recibes</label>
 		<div id="money2" class="columns">
 			

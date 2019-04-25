@@ -61,8 +61,6 @@ var tryes = false;
 
 function changeCoin() {
 
-	console.log(tryes)
-
 	if (tryes == true) {
 
 		let soles =  document.getElementById("money1").innerHTML = `
@@ -148,14 +146,9 @@ function changeCoin() {
 		</div>
 		`
 
-		var sheet = window.document.styleSheets[0];
-		sheet.insertRule(`
-			@keyframes spin {
-	  			0% { transform: rotate(0deg); }
-	  			100% { transform: rotate(360deg); }
-			}
-
-		`, sheet.cssRules.length);
+		let spin = document.getElementById("spin")
+		spin.classList.remove("spin-reverse")
+		spin.classList.add("spin-btn")
 
 		tryes = true;
 
