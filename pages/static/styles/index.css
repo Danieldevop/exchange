@@ -14,8 +14,8 @@
 
 nav {
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.11),
-            0 5px 15px 0 rgba(0,0,0,0.08);
-	padding: 10px 20px 10px 20px;
+            0 5px 15px 0 rgba(0,0,0,0.08);    
+	padding: 0px 20px 0px 20px;
 }
 
 nav a {
@@ -60,9 +60,10 @@ p {
 }
 
 .main-title {
-	margin-top: 1%;
 	font-size: 30px;
-	padding: 20px;
+	padding: 10px;
+	text-align: left;
+	margin-top: -6%;
 }
 
 .face-pay {
@@ -70,7 +71,9 @@ p {
 }
 
 .face-pay div img {
-	width: 78%;
+	width: 60%;
+	display: block;
+	margin: auto;
 }
 
 .bg1 {
@@ -165,17 +168,42 @@ input {
 	height: 50px;
 	border-radius: 12px;
 	padding: 10px;
-	border: 2px solid  black;
+	border: 2px solid  rgb(27, 27, 27);
 	font-size: 30px;
+	outline: none;
 }
 
 .money {
 	text-align: left;
 	font-weight: bold;
 	margin-top: 2%;
-	background: black;
+	background: rgb(27, 27, 27);
 	height: 50px;
 	border-radius: 5px;
+}
+
+.spin-btn {
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	width: 20%;
+	animation: spin 1s linear;
+}
+
+.spin-reverse {
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+	width: 20%;
+	animation: spin-rev 1s linear;
+}
+
+
+@keyframes spin-rev {
+	 0% { transform: rotate(360deg); }
+	 100% { transform: rotate(0deg); }
 }
 
 .money p {
@@ -184,7 +212,7 @@ input {
 
 .contact-form {
 	margin: auto;
-	margin-top: 15%;
+	margin-top: 20%;
 }
 
 .contact-button {
