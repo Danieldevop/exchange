@@ -12,10 +12,10 @@ class ContactForm(models.Model):
 		return self.name
 
 class ExchangeForm(models.Model):
-	amount_to_exchange = models.IntegerField()
+	amount_to_exchange = models.CharField(max_length=20)
 	name = models.CharField(max_length=20)
 	surname = models.CharField(max_length=20)
 	email = models.EmailField()
 	phone = models.CharField(max_length=15)
-	calculated_value = models.IntegerField()
+	calculated_value = models.IntegerField(default='', blank=True, null=True)
 

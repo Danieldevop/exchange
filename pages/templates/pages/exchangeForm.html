@@ -13,40 +13,43 @@
 <section class="container">
 	<div class="bg-contact contact">
 		<h1 class="title">
-			¿Tienes Dudas?
+			Completa tu operación
 		</h1>
-		<p>Solo llena el formulario. te contactaremos lo mas pronto posible</p>
 		<div class="bg4-content contact-form-contact">
 			<form id="theForm" method="POST" class="">
 				{% csrf_token %}
+
 				<div class="field">
-					<label class="label" for="name"></label>
+					<label class="label" for="amount_to_exchange">Mónto en soles</label>
+					<div class="control">
+						<input class="input" id="amount_to_exchange" required="true" type="text" placeholder="Soles a cambiar" value="{{ amount }}" name="amount_to_exchange">
+					</div>
+				</div>
+				<div class="field">
+					<label class="label" for="name">Nombre</label>
 					<div class="control">
 						<input class="input" id="name" required="true" type="text" placeholder="Nombre" name="name">
 					</div>
 				</div>
 
 				<div class="field">
-					<label class="label" for="surname"></label>
+					<label class="label" for="surname">Apellido</label>
 					<div class="control">
 						<input class="input" id="surname" required="true" type="text" placeholder="Apellido" name="surname">
 					</div>
 				</div>
 
 				<div class="field">
-					<label class="label" for="email"></label>
+					<label class="label" for="email">Email</label>
 					<div class="control">
 						<input class="input" id="email" required="true" type="email" placeholder="Email" name="email">
 					</div>
 				</div>
 				<div class="field">
-					<label class="label" for="phone"></label>
+					<label class="label" for="phone">Número de movil</label>
 					<div class="control">
 						<input class="input" type="tel" id="phone" required="true" placeholder="Número de movil" name="phone">
 					</div>
-				</div>
-				<div class="field">
-					<textarea class="textarea" placeholder="Mensaje Opcional" name="message"></textarea>
 				</div>
 				 <div class="">
     				<input type="submit" class="contact-button button btn-main" value="ENVIAR">
