@@ -17,5 +17,5 @@ class ExchangeForm(models.Model):
 	surname = models.CharField(max_length=20)
 	email = models.EmailField()
 	phone = models.CharField(max_length=15)
-	calculated_value = models.CharField(max_length=15, default='', blank=True, null=True)
+	calculated_value = models.CharField(max_length=15, blank=True, null=True)
 
